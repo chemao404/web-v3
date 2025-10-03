@@ -1,103 +1,438 @@
+'use client'
+
 import Image from "next/image";
+import Link from "next/link";
+import { useState } from 'react'
 
 export default function Home() {
+  const [activeMenu, setActiveMenu] = useState('шарпей')
   return (
-    <div className="font-sans grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-        <Image
-          className="dark:invert"
-          src="/next.svg"
-          alt="Next.js logo"
-          width={180}
-          height={38}
-          priority
-        />
-        <ol className="font-mono list-inside list-decimal text-sm/6 text-center sm:text-left">
-          <li className="mb-2 tracking-[-.01em]">
-            Get started by editing{" "}
-            <code className="bg-black/[.05] dark:bg-white/[.06] font-mono font-semibold px-1 py-0.5 rounded">
-              app/page.tsx
-            </code>
-            .
-          </li>
-          <li className="tracking-[-.01em]">
-            Save and see your changes instantly.
-          </li>
-        </ol>
+    <div className="bg-[#F9F4F0]">
+    <div className="min-h-screen flex flex-col md:flex-row">
+      <div className="w-1/2  flex items-center justify-center p-8">
+        <div className="max-w-md">
+          <h1 className="text-3xl font-bold text-gray-900 mb-6">
+            СОБАКИ С ВЫСОКИМ ШОУ-ПОТЕНЦИАЛОМ, И ПРЕДАННЫЕ ДОМАШНИЕ СПУТНИКИ
+          </h1>
 
-        <div className="flex gap-4 items-center flex-col sm:flex-row">
-          <a
-            className="rounded-full border border-solid border-transparent transition-colors flex items-center justify-center bg-foreground text-background gap-2 hover:bg-[#383838] dark:hover:bg-[#ccc] font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 sm:w-auto"
-            href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            <Image
-              className="dark:invert"
-              src="/vercel.svg"
-              alt="Vercel logomark"
-              width={20}
-              height={20}
-            />
-            Deploy now
-          </a>
-          <a
-            className="rounded-full border border-solid border-black/[.08] dark:border-white/[.145] transition-colors flex items-center justify-center hover:bg-[#f2f2f2] dark:hover:bg-[#1a1a1a] hover:border-transparent font-medium text-sm sm:text-base h-10 sm:h-12 px-4 sm:px-5 w-full sm:w-auto md:w-[158px]"
-            href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Read our docs
-          </a>
+          <p className="text-lg md:text-xl text-gray-700 mb-8">
+            Питомцы Черный Чиж призваны стать звездами как на выставочном ринге, так и в вашем сердце
+          </p>
+          
+          <div className="flex flex-col sm:flex-row gap-4">
+            <button className="bg-[#396448] text-white font-bold py-3 px-6 rounded-lg transition duration-300 text-center">
+              ПОДОБРАТЬ СОБАКУ
+            </button>
+            
+            <button className="text-[#396448] bg-white border-[#396448] font-bold py-3 px-6 rounded-lg transition duration-300 flex items-center justify-center">
+              <span className="mr-2">WHATSAPP</span>
+            </button>
+          </div>
         </div>
-      </main>
-      <footer className="row-start-3 flex gap-[24px] flex-wrap items-center justify-center">
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/file.svg"
-            alt="File icon"
-            width={16}
-            height={16}
-          />
-          Learn
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/window.svg"
-            alt="Window icon"
-            width={16}
-            height={16}
-          />
-          Examples
-        </a>
-        <a
-          className="flex items-center gap-2 hover:underline hover:underline-offset-4"
-          href="https://nextjs.org?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <Image
-            aria-hidden
-            src="/globe.svg"
-            alt="Globe icon"
-            width={16}
-            height={16}
-          />
-          Go to nextjs.org →
-        </a>
-      </footer>
+      </div>
+
+      <div className="w-full md:w-1/2 bg-[url('/images/баннер.png')] bg-[size:500px_auto] bg-no-repeat ">
+      </div>
     </div>
-  );
+    <div className=""></div>
+ <div className=" py-12 px-4 sm:px-6 lg:px-8">
+      <div className="max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+          О питомнике
+        </h2>
+        
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+          <div className="bg-[#EFE9E3] rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div className="flex flex-col h-full">
+              <div className="p-6 flex-1 flex flex-col">
+                <p className="text-gray-600 flex-1">
+                  Мы занимаемся разведением собак с 1994 года, обеспечивая высокий уровень качества и заботы на протяжении многих лет
+                </p>
+
+              </div>
+              <div className="h-48 bg-gray-200 overflow-hidden">
+                <img
+                  src="images/sdvs.png"
+                  alt="Опыт с 1994 года"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-[#EFE9E3] rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div className="flex flex-col h-full">
+              <div className="h-48 bg-gray-200 overflow-hidden">
+                <img
+                  src="images/img.png"
+                  alt="Онлайн поддержка"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <div className="p-6 flex-1 flex flex-col">
+
+                <p className="text-gray-600 flex-1">
+                  Предоставляем онлайн поддержку и консультации, помогая вам во всех аспектах ухода и воспитания вашего любимца.
+                </p>
+
+              </div>
+            </div>
+          </div>
+
+          <div className="bg-[#EFE9E3] rounded-xl shadow-md overflow-hidden transition-transform duration-300 hover:scale-105">
+            <div className="flex flex-col h-full">
+              <div className="p-6 flex-1 flex flex-col">
+                <p className="text-gray-600 flex-1">
+                  У нас более 200 собак, завоевавших титулы чемпионов в разных странах мира
+                </p>
+              </div>
+              <div className="h-48 bg-gray-200 overflow-hidden">
+                <img
+                  src="images/1.png"
+                  alt="Чемпионы мира"
+                  className="w-full h-full object-cover"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+   <div>
+      <nav className="flex justify-center">
+        <div className="">
+          <ul className="flex gap-4 text-[18px]">
+            <li>
+              <button 
+                onClick={() => setActiveMenu('шарпей')}
+                className={ 
+                  activeMenu === 'шарпей' 
+                    ? "bg-[#396448] text-white border-2 border-[#396448] p-6 rounded-2xl rounded-b-none" 
+                    : "hover:bg-[#396448] hover:text-white bg-[#F9F4F0] text-[#396448] border-2 border-[#396448] p-6 rounded-2xl rounded-b-none"
+                }
+              >
+                шарпей
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => setActiveMenu('сиба-ину')}
+                className={
+                  activeMenu === 'сиба-ину' 
+                    ? "bg-[#396448] text-white border-2 border-[#396448] p-6 rounded-2xl rounded-b-none" 
+                    : "hover:bg-[#396448] hover:text-white bg-[#F9F4F0] text-[#396448] border-2 border-[#396448] p-6 rounded-2xl rounded-b-none"
+                }
+              >
+                сиба-ину
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => setActiveMenu('Корги')}
+                className={
+                  activeMenu === 'Корги' 
+                    ? "bg-[#396448] text-white border-2 border-[#396448] p-6 rounded-2xl rounded-b-none" 
+                    : "hover:bg-[#396448] hover:text-white bg-[#F9F4F0] text-[#396448] border-2 border-[#396448] p-6 rounded-2xl rounded-b-none"
+                }
+              >
+                Корги
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => setActiveMenu('Померанский шпиц')}
+                className={
+                  activeMenu === 'Померанский шпиц' 
+                    ? "bg-[#396448] text-white border-2 border-[#396448] p-6 rounded-2xl rounded-b-none" 
+                    : "hover:bg-[#396448] hover:text-white bg-[#F9F4F0] text-[#396448] border-2 border-[#396448] p-6 rounded-2xl rounded-b-none"
+                }
+              >
+                Померанский шпиц
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      {/* Контент который меняется */}
+      <div className="">
+        {activeMenu === 'шарпей' && <div><div className="flex justify-center bg-[#396448] text-white h-auto p-3 gap-8 rounded-2xl">
+               <Image 
+               src="/images/баннер.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+                 <Image 
+               src="/images/баннер.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 /><Image 
+               src="/images/баннер.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+
+    </div></div>}
+        {activeMenu === 'сиба-ину' && <div><div className="flex justify-center bg-[#396448] text-white h-auto p-3 gap-8 rounded-2xl mb-5">
+               <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+                 <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 /><Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+
+    </div></div>}
+        {activeMenu === 'Корги' && <div><div className="flex justify-center bg-[#396448] text-white h-auto p-3 gap-8 rounded-2xl mb-5">
+               <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+                 <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 /><Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+
+    </div></div>}
+        {activeMenu === 'Померанский шпиц' && <div><div className="flex justify-center bg-[#396448] text-white h-auto p-3 gap-8 rounded-2xl mb-5">
+               <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+                 <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 /><Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+
+    </div></div>}
+      </div>
+    </div>
+    <h2 className="text-3xl font-bold text-center text-gray-800 mb-12">
+        Почему мы - лучший выбор      
+    </h2>
+<div className="min-h-screen relative flex items-center justify-center p-8">
+  <div 
+    className="absolute right-0 top-0 bottom-0 w-1/2 bg-cover bg-center bg-[url('/images/корга.png')]">
+    <div className="absolute inset-0 bg-opacity-10"></div>
+  </div>
+  <div className="max-w-6xl w-full relative z-10">
+    <div className="grid grid-cols-2 gap-6 max-w-2xl">
+      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 transition-all duration-300 hover:bg-white hover:shadow-lg">
+        <h3 className="text-xl font-semibold text-gray-800 mb-3">ГАРАНТИЯ КАЧЕСТВА</h3>
+        <p className="text-gray-600">Мы следим за условиями содержания каждого питомца</p>
+      </div>
+
+      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 transition-all duration-300 hover:bg-white hover:shadow-lg">
+        <h3 className="text-xl font-semibold text-gray-800 mb-3">ВЫДАЮЩИЕСЯ РЕЗУЛЬТАТЫ</h3>
+        <p className="text-gray-600">Множество выставочных собак, ставших чемпионами разных стран.</p>
+      </div>
+
+      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 transition-all duration-300 hover:bg-white hover:shadow-lg">
+        <h3 className="text-xl font-semibold text-gray-800 mb-3">ДОКУМЕНТЫ</h3>
+        <p className="text-gray-600">Полный пакет документов, включая родословную МФ-ГС!</p>
+      </div>
+
+      <div className="bg-white/90 backdrop-blur-sm rounded-2xl p-6 transition-all duration-300 hover:bg-white hover:shadow-lg">
+        <h3 className="text-xl font-semibold text-gray-800 mb-3">МИРОВАЯ ДОСТАВКА</h3>
+        <p className="text-gray-600">Возможность приобретения в любой точке земного шара</p>
+      </div>
+    </div>
+  </div>
+</div>
+   <div>
+      <nav className="flex justify-center">
+        <div className="">
+          <ul className="flex gap-4 text-[18px]">
+            <li>
+              <button 
+                onClick={() => setActiveMenu('шарпей')}
+                className={ 
+                  activeMenu === 'шарпей' 
+                    ? "bg-[#AB8264] text-white border-2 border-[#AB8264] p-6 rounded-2xl rounded-b-none" 
+                    : "hover:bg-[#AB8264] hover:text-white bg-[#F9F4F0] text-[#AB8264] border-2 border-[#AB8264] p-6 rounded-2xl rounded-b-none"
+                }
+              >
+                шарпей
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => setActiveMenu('сиба-ину')}
+                className={
+                  activeMenu === 'сиба-ину' 
+                    ? "bg-[#AB8264] text-white border-2 border-[#AB8264] p-6 rounded-2xl rounded-b-none" 
+                    : "hover:bg-[#AB8264] hover:text-white bg-[#F9F4F0] text-[#AB8264] border-2 border-[#AB8264] p-6 rounded-2xl rounded-b-none"
+                }
+              >
+                сиба-ину
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => setActiveMenu('Корги')}
+                className={
+                  activeMenu === 'Корги' 
+                    ? "bg-[#AB8264] text-white border-2 border-[#AB8264] p-6 rounded-2xl rounded-b-none" 
+                    : "hover:bg-[#AB8264] hover:text-white bg-[#F9F4F0] text-[#AB8264] border-2 border-[#AB8264] p-6 rounded-2xl rounded-b-none"
+                }
+              >
+                Корги
+              </button>
+            </li>
+            <li>
+              <button 
+                onClick={() => setActiveMenu('Померанский шпиц')}
+                className={
+                  activeMenu === 'Померанский шпиц' 
+                    ? "bg-[#AB8264] text-white border-2 border-[#AB8264] p-6 rounded-2xl rounded-b-none" 
+                    : "hover:bg-[#AB8264] hover:text-white bg-[#F9F4F0] text-[#AB8264] border-2 border-[#AB8264] p-6 rounded-2xl rounded-b-none"
+                }
+              >
+                Померанский шпиц
+              </button>
+            </li>
+          </ul>
+        </div>
+      </nav>
+
+      <div className="">
+        {activeMenu === 'шарпей' && <div><div className="flex justify-center bg-[#AB8264] text-white h-auto p-3 gap-8 rounded-2xl mb-10">
+               <Image 
+               src="/images/баннер.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+                 <Image 
+               src="/images/баннер.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 /><Image 
+               src="/images/баннер.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+
+    </div></div>}
+        {activeMenu === 'сиба-ину' && <div><div className="flex justify-center bg-[#396448] text-white h-auto p-3 gap-8 rounded-2xl mb-5">
+               <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+                 <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 /><Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+
+    </div></div>}
+        {activeMenu === 'Корги' && <div><div className="flex justify-center bg-[#396448] text-white h-auto p-3 gap-8 rounded-2xl mb-5">
+               <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+                 <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 /><Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+
+    </div></div>}
+        {activeMenu === 'Померанский шпиц' && <div><div className="flex justify-center bg-[#396448] text-white h-auto p-3 gap-8 rounded-2xl mb-5">
+               <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+                 <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 /><Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={100}
+               className=""
+                 />
+
+    </div></div>}
+      </div>
+    </div>
+    </div>
+  )
 }

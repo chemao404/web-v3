@@ -671,7 +671,7 @@ export default function Home() {
                  />
         </div>
         
-        <div className="p-6 md:p-8">
+        <div className=" w-100 p-6 md:p-8">
           <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-4">
             <h3 className="text-xl md:text-2xl font-bold mb-2 md:mb-0">
               ЗА ПРЕДЕЛАМИ ВЫСТАВОЧНОГО РИНГА: ИСТОРИИ УСПЕХА НАШИХ ВЫПУСКНИКОВ
@@ -695,8 +695,14 @@ export default function Home() {
     <div className="space-y-6 md:space-y-8">
       <div className="bg-[#EFE9E3] rounded-xl overflow-hidden shadow-sm">
         <div className="flex flex-col sm:flex-row">
-          <div className="sm:w-1/3 h-40 sm:h-auto bg-gray-300 flex items-center justify-center">
-            <span className="text-gray-500 text-sm">Фото</span>
+          <div className="">
+            <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={200}
+               className="md:h-80 bg-gray-300 rounded-t-xl flex items-center justify-center"
+                 />
           </div>
           <div className="sm:w-2/3 p-4 md:p-6">
             <h4 className="font-bold text-lg mb-2">
@@ -713,8 +719,14 @@ export default function Home() {
 
       <div className="bg-[#EFE9E3] rounded-xl overflow-hidden shadow-sm">
         <div className="flex flex-col sm:flex-row">
-          <div className="sm:w-1/3 h-40 sm:h-auto bg-gray-300 flex items-center justify-center">
-            <span className="text-gray-500 text-sm">Фото</span>
+          <div className="">
+            <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={200}
+               className="md:h-80 bg-gray-300 rounded-t-xl flex items-center justify-center"
+                 />
           </div>
           <div className="sm:w-2/3 p-4 md:p-6">
             <h4 className="font-bold text-lg mb-2">
@@ -731,8 +743,14 @@ export default function Home() {
 
       <div className="bg-[#EFE9E3] rounded-xl overflow-hidden shadow-sm">
         <div className="flex flex-col sm:flex-row">
-          <div className="sm:w-1/3 h-40 sm:h-auto bg-gray-300 flex items-center justify-center">
-            <span className="text-gray-500 text-sm">Фото</span>
+          <div className="">
+            <Image 
+               src="/images/шарпей.png"  
+               alt="Лого"
+               width={300}
+               height={200}
+               className="md:h-80 bg-gray-300 rounded-t-xl flex items-center justify-center"
+                 />
           </div>
           <div className="sm:w-2/3 p-4 md:p-6">
             <h4 className="font-bold text-lg mb-2">

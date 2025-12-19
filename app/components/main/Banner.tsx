@@ -7,8 +7,8 @@ import Button from "@/app/ui/button/Button";
 
 export default function Banner() {
     return(
-    <div className="min-h-screen flex flex-col md:flex-row">
-      <div className="w-1/2  flex items-center justify-center p-8">
+    <div className="min-h-screen flex flex-col lg:flex-row">
+      <div className="w-full lg:w-1/2  flex items-center justify-center p-8">
         <div className="max-w-md">
           <h1 className="text-3xl font-bold text-gray-900 mb-6">
             СОБАКИ С ВЫСОКИМ ШОУ-ПОТЕНЦИАЛОМ, И ПРЕДАННЫЕ ДОМАШНИЕ СПУТНИКИ
@@ -26,7 +26,7 @@ export default function Banner() {
           </div>
         </div>
       </div>
-      <div className="w-full md:w-1/2 bg-[url('/images/баннер.png')] bg-[size:500px_auto] bg-no-repeat ">
+      <div className="w-full lg:w-1/2 min-h-[50vh] bg-[url('/images/баннер.png')] bg-contain bg-no-repeat bg-center lg:bg-left">
       </div>
     </div>
     )
